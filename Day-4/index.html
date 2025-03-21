@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <style>
+        .hero {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+
+            #button {
+                align-self: center;
+                margin-top: 10px;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 10px;
+
+
+            }
+
+            #messg {
+                height: 80px;
+            }
+            legend {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <form action="post">
+            <fieldset> 
+                <legend>Contact Us</legend>
+
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="John Doe" required><br>
+
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" name="mail" placeholder="xyz@hotmail.com" required><br>
+
+
+                <label for="messg">Message</label><br>
+                <input type="text" id="messg" name="messg" placeholder="Blahh Blahh Blahh..."<br>
+
+                <input type="submit" id="button" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
